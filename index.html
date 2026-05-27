@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>THE RECORD — Pitch Deck</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- MASTHEAD -->
+<div class="masthead">
+<div class="masthead-inner">
+  <div class="masthead-eyebrow">Kasr Private Intelligence · Investor Brief · 2026</div>
+  <div class="masthead-title">THE RECORD</div>
+  <div class="masthead-sub">Your computer records meetings, writes the transcript, and remembers every decision — privately, forever.</div>
+  <div class="masthead-rule"></div>
+  <div class="masthead-meta">
+    <div class="masthead-left">macOS · Open-Core · On-Device</div>
+    <div class="masthead-hook">"Others say they are private. We prove it. Read our source code."</div>
+  </div>
+</div>
+</div>
+
+<div class="container">
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="hero-label">This Happened. This Week.</div>
+    <div class="hero-slack">
+      <div class="hero-slack-meta">markt · 12:14 · #general @Everyone</div>
+      <div class="hero-slack-text">"I chatted with Marcus. I believe someone made a mistake when dev-sandbox was first created — they used incorrect casing (e.g., "dev-Sandbox" instead of "dev-sandbox"). Jordan had to rename the account, which was not easy. Does this ring a bell? Maybe the rename task got mixed up with deleting accounts? I don't know why we would delete a provisioned environment mid-sprint without a deprecation ticket — if anyone has context on how this happened, please drop it in the thread so we can make sure it doesn't happen again."</div>
+    </div>
+    <div class="hero-slack" style="margin-top:14px;">
+      <div class="hero-slack-meta">samf · 12:14</div>
+      <div class="hero-slack-text dim">"it rings a bell but I was on vacation last week and am having trouble remembering the before times"</div>
+    </div>
+    <div class="hero-slack" style="margin-top:10px;">
+      <div class="hero-slack-meta">thomas · 12:16</div>
+      <div class="hero-slack-text dim">"I think Emily made the call but she is on vacation for 3 weeks."</div>
+    </div>
+    <div class="hero-context" style="margin-top:22px;">A decision was made in a meeting. Nobody recorded it. Now a provisioned environment may be gone, the person who made the call is unreachable, and the only person with context was on vacation. This happens every week in every company.</div>
+    <div class="hero-thesis-rule"></div>
+    <div class="hero-thesis">Not a transcript.<br><em>A memory.</em></div>
+  </div>
+
+  <!-- THE PROBLEM -->
+  <div class="section">
+    <div class="heavy-rule"></div>
+    <div class="kicker">The Problem</div>
+    <div class="section-headline">Institutional Amnesia</div>
+    <p class="problem-body">Every meeting produces decisions. Most of them disappear. The rename vs. delete confusion. "I thought we agreed to X." "Who approved this?" "I wasn't in that meeting." These aren't process failures or people failures. They're <strong>memory failures</strong> — the organization forgot something it knew.</p>
+    <p class="problem-body">The tools that exist today don't fix this. Otter, Fireflies, Notion AI, Microsoft Copilot — all do the same thing: transcribe, chunk, send to GPT-4, return bullet points. That's not intelligence. That's grep with a nicer UI.</p>
+    <div class="problem-tagline">They produce transcripts. We're building a decision engine.</div>
+  </div>
+
+  <!-- PAGE 2: SOLUTION -->
+  <div class="section" style="page-break-before:always; padding-top:36px;">
+    <div class="heavy-rule-green"></div>
+    <div class="kicker kicker-green">The Solution</div>
+    <div class="section-headline">THE RECORD</div>
+    <div class="section-deck">Local-first macOS meeting intelligence. Everything runs on the user's device — no audio ever leaves the machine. Not a feature. The architecture.</div>
+    <div class="grid-2">
+      <div class="cell">
+        <div class="stat-num">450×</div>
+        <div class="stat-unit">Real-Time Factor</div>
+        <div class="stat-sub">105-minute meeting processed in 74 seconds. On-device. No cloud round-trip.</div>
+      </div>
+      <div class="cell">
+        <div class="stat-num">93%</div>
+        <div class="stat-unit">Confidence Score</div>
+        <div class="stat-sub">Tested against messy real-world audio — podcasts, multi-speaker rooms, accents.</div>
+      </div>
+      <div class="cell">
+        <div class="stat-num">4–20</div>
+        <div class="stat-unit">Speakers, Separated</div>
+        <div class="stat-sub">FluidAudio diarization — boardrooms, depositions, clinical assessments.</div>
+      </div>
+      <div class="cell">
+        <div class="stat-num">0</div>
+        <div class="stat-unit">Bytes Sent to Cloud</div>
+        <div class="stat-sub">Not a privacy policy. An architectural guarantee. The data never exists anywhere else.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- WHAT IT DOES -->
+  <div class="section">
+    <div class="heavy-rule-green"></div>
+    <div class="kicker kicker-green">What THE RECORD Does</div>
+    <div class="grid-2">
+      <div class="cell">
+        <div style="font-size:22px;margin-bottom:10px;">🎙️</div>
+        <div class="market-name">Records &amp; Transcribes</div>
+        <div class="market-desc">Open the app before your meeting. It listens and writes down everything said — word for word, automatically. No typing, no note-taker needed.</div>
+      </div>
+      <div class="cell">
+        <div style="font-size:22px;margin-bottom:10px;">👥</div>
+        <div class="market-name">Knows Who Said What</div>
+        <div class="market-desc">It separates up to 20 different voices and labels each one. So instead of a wall of text, you get a clear conversation — Sarah said this, David said that.</div>
+      </div>
+      <div class="cell">
+        <div style="font-size:22px;margin-bottom:10px;">📋</div>
+        <div class="market-name">Writes Your Summary</div>
+        <div class="market-desc">When the meeting ends, it reads everything and gives you the key decisions, action items, and important moments. A 90-minute meeting summarized in seconds.</div>
+      </div>
+      <div class="cell">
+        <div style="font-size:22px;margin-bottom:10px;">🔍</div>
+        <div class="market-name">Remembers Everything</div>
+        <div class="market-desc">Ask questions about decisions made months ago. Every meeting is indexed and searchable — locally, forever. The institutional memory your organization never had.</div>
+      </div>
+    </div>
+    <div class="moat-strip">
+      <div class="moat-item"><span>Crucially</span>Everything happens on your own computer — Mac, Windows, or Linux. Your meetings never leave your machine. Not one word is sent to the cloud.</div>
+    </div>
+  </div>
+
+  <!-- PAGE 3: MARKET POSITIONING -->
+  <div class="section" style="page-break-before:always; padding-top:36px;">
+    <div class="heavy-rule"></div>
+    <div class="kicker">Market Positioning</div>
+    <div class="section-headline">The Universal Zero-Trust AI Assistant</div>
+    <div class="section-deck">Cloud AI is blocked from the most valuable enterprise accounts. We're the only viable option for organizations legally prohibited from sending data to the cloud.</div>
+    <div class="kicker" style="margin-top:16px;margin-bottom:6px;">Who It's For</div>
+    <div class="grid-2">
+      <div class="cell">
+        <div class="market-num">01 · Knowledge Workers</div>
+        <div class="market-name">Professionals &amp; Teams</div>
+        <div class="market-desc">Meetings, 1:1s, client calls. The people who spend half their day in conversation and the other half trying to reconstruct what was decided. THE RECORD replaces the follow-up email with a record that was never lost.</div>
+        <div class="market-tag">Primary market · Free + Standard tier</div>
+      </div>
+      <div class="cell">
+        <div class="market-num">02 · Journalists &amp; Researchers</div>
+        <div class="market-name">Interviews &amp; Field Recording</div>
+        <div class="market-desc">Source protection is non-negotiable. Interviews, panel recordings, oral histories — captured with speaker-level precision, indexed locally, never exposed. The only tool a journalist can use without a source liability conversation.</div>
+        <div class="market-tag">Standard + Pro tier</div>
+      </div>
+      <div class="cell">
+        <div class="market-num">03 · Legal &amp; Compliance</div>
+        <div class="market-name">Depositions &amp; Proceedings</div>
+        <div class="market-desc">Attorney-client privilege, chain-of-custody, PHI. Cloud tools legally cannot enter this market. THE RECORD is the only on-device option with enterprise-grade accuracy, tamper-evident hashing, and e-discovery export.</div>
+        <div class="market-tag">Pro tier · Dragon displacement</div>
+      </div>
+      <div class="cell">
+        <div class="market-num">04 · Enterprise &amp; Teams</div>
+        <div class="market-name">Shared Institutional Memory</div>
+        <div class="market-desc">A Mac Mini as shared server, WebSocket thin clients at every desk. Law firms, medical offices, and regulated enterprises get organization-wide meeting intelligence without a single byte leaving the building.</div>
+        <div class="market-tag">Team tier · site license</div>
+      </div>
+    </div>
+    <div class="kicker" style="margin-top:20px;margin-bottom:6px;">Where It Goes</div>
+    <div class="grid-2">
+      <div class="cell">
+        <div class="market-num">01 · Regulated Industries</div>
+        <div class="market-name">Healthcare, Legal, Finance</div>
+        <div class="market-desc">HIPAA, GDPR, attorney-client privilege. Otter and Copilot can't enter. We're the only on-device option with enterprise accuracy. Dragon Medical is the incumbent — passive, multi-speaker, natural language replaces active dictation.</div>
+        <div class="market-tag">Primary market · macOS today</div>
+      </div>
+      <div class="cell">
+        <div class="market-num">02 · Enterprise Windows Fleet</div>
+        <div class="market-name">Corporate IT at Scale</div>
+        <div class="market-desc">Windows dominates corporate IT. Law firms, healthcare networks, and enterprise fleets want AI but are terrified of data leaks. Per-seat site licenses. IT buys once, rolls out to everyone.</div>
+        <div class="market-tag">Roadmap · Windows port</div>
+      </div>
+      <div class="cell">
+        <div class="market-num">03 · Government &amp; Defense</div>
+        <div class="market-name">Air-Gapped, Linux, DoD</div>
+        <div class="market-desc">Linux opens the most secure organizations on earth — air-gapped government facilities, defense contractors, hospital equipment where external internet is disconnected.</div>
+        <div class="market-tag">Roadmap · Linux port</div>
+      </div>
+      <div class="cell">
+        <div class="market-num">04 · BYOD Enterprise</div>
+        <div class="market-name">The Unified Standard</div>
+        <div class="market-desc">Mixed device environments. Mac for the C-suite, Windows for accounting, Linux for engineering. One license, every OS, no data risk. The procurement story that sells itself.</div>
+        <div class="market-tag">Roadmap · cross-platform</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- POSITIONING MAP -->
+  <div class="section">
+    <div class="heavy-rule"></div>
+    <div class="kicker">Positioning Map</div>
+    <div class="section-headline">The White Space</div>
+    <div class="section-deck">X-axis: Privacy Architecture (Cloud-dependent → Fully local &amp; verifiable) · Y-axis: Intelligence Depth (Raw transcription → Full meeting intelligence)</div>
+    <div class="quadrant-wrap">
+      <svg viewBox="0 0 760 524" xmlns="http://www.w3.org/2000/svg">
+        <rect x="40" y="20" width="340" height="232" fill="#FAE8E8"/>
+        <rect x="380" y="20" width="368" height="232" fill="#E6F2ED"/>
+        <rect x="40" y="252" width="340" height="232" fill="#F5F0E4"/>
+        <rect x="380" y="252" width="368" height="232" fill="#EEE9DC"/>
+        <line x1="380" y1="20" x2="380" y2="484" stroke="#DDD6C4" stroke-width="1"/>
+        <line x1="40" y1="252" x2="748" y2="252" stroke="#DDD6C4" stroke-width="1"/>
+        <rect x="40" y="20" width="708" height="464" fill="none" stroke="#DDD6C4" stroke-width="0.75"/>
+        <text x="210" y="40" text-anchor="middle" font-family="'SF Mono','Courier New',monospace" font-size="10" font-weight="600" letter-spacing="0.2em" fill="#B8281F">THEIR TURF</text>
+        <text x="564" y="40" text-anchor="middle" font-family="'SF Mono','Courier New',monospace" font-size="10" font-weight="600" letter-spacing="0.14em" fill="#2D5A3D">OWN THIS — WHITE SPACE</text>
+        <text x="210" y="476" text-anchor="middle" font-family="'SF Mono','Courier New',monospace" font-size="9" letter-spacing="0.14em" fill="#A8A89E">CLOUD COMMODITY</text>
+        <text x="564" y="476" text-anchor="middle" font-family="'SF Mono','Courier New',monospace" font-size="9" letter-spacing="0.14em" fill="#8A8A80">PRIVACY TOOLS</text>
+        <text transform="translate(14,252) rotate(-90)" text-anchor="middle" font-family="'SF Mono','Courier New',monospace" font-size="8" fill="#A8A89E" letter-spacing="0.12em">INTELLIGENCE DEPTH</text>
+        <defs>
+          <marker id="ah" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><polygon points="0,0 7,3.5 0,7" fill="#C8C2B0"/></marker>
+          <marker id="av" markerWidth="7" markerHeight="7" refX="3.5" refY="0" orient="auto"><polygon points="0,7 3.5,0 7,7" fill="#C8C2B0"/></marker>
+        </defs>
+        <line x1="22" y1="484" x2="22" y2="24" stroke="#C8C2B0" stroke-width="0.75" marker-end="url(#av)"/>
+        <line x1="40" y1="500" x2="744" y2="500" stroke="#C8C2B0" stroke-width="0.75" marker-end="url(#ah)"/>
+        <text x="42" y="514" text-anchor="start" font-family="'SF Mono','Courier New',monospace" font-size="8" fill="#A8A89E" letter-spacing="0.06em">CLOUD-DEPENDENT</text>
+        <text x="746" y="514" text-anchor="end" font-family="'SF Mono','Courier New',monospace" font-size="8" fill="#A8A89E" letter-spacing="0.06em">FULLY LOCAL &amp; VERIFIABLE</text>
+        <!-- Granola: local capture, cloud summarization -->
+        <circle cx="352" cy="128" r="11" fill="#2A3A5A"/>
+        <text x="370" y="124" font-family="-apple-system,BlinkMacSystemFont,sans-serif" font-size="11" font-weight="600" fill="#0E0E0C">Granola</text>
+        <text x="370" y="139" font-family="Georgia,serif" font-size="9" font-style="italic" fill="#6A6A66">$1.5B · cloud transcription</text>
+        <!-- Otter.ai -->
+        <circle cx="248" cy="168" r="9" fill="#1A2A40"/>
+        <text x="264" y="164" font-family="-apple-system,BlinkMacSystemFont,sans-serif" font-size="11" font-weight="600" fill="#0E0E0C">Otter.ai</text>
+        <text x="264" y="179" font-family="Georgia,serif" font-size="9" font-style="italic" fill="#6A6A66">$100M ARR</text>
+        <!-- Fathom -->
+        <circle cx="306" cy="208" r="7" fill="#606060"/>
+        <text x="320" y="204" font-family="-apple-system,BlinkMacSystemFont,sans-serif" font-size="11" font-weight="600" fill="#0E0E0C">Fathom</text>
+        <text x="320" y="219" font-family="Georgia,serif" font-size="9" font-style="italic" fill="#6A6A66">free tier · cloud</text>
+        <!-- Fireflies -->
+        <circle cx="182" cy="248" r="8" fill="#B8281F"/>
+        <text x="197" y="244" font-family="-apple-system,BlinkMacSystemFont,sans-serif" font-size="11" font-weight="600" fill="#B8281F">Fireflies ▲</text>
+        <text x="197" y="258" font-family="Georgia,serif" font-size="9" font-style="italic" fill="#B8281F">BIPA lawsuit active</text>
+        <!-- Read.ai -->
+        <circle cx="300" cy="280" r="6" fill="#7A7A74"/>
+        <text x="313" y="276" font-family="-apple-system,BlinkMacSystemFont,sans-serif" font-size="11" font-weight="500" fill="#6A6A66">Read.ai</text>
+        <text x="313" y="290" font-family="Georgia,serif" font-size="9" font-style="italic" fill="#A8A89E">1.4/5 ★</text>
+        <!-- THE RECORD SUITE -->
+        <text x="508" y="50" font-family="'SF Mono','Courier New',monospace" font-size="8" font-weight="600" fill="#2D5A3D" letter-spacing="0.1em">AGPL · FluidAudio · Gemma</text>
+        <text x="508" y="63" font-family="-apple-system,BlinkMacSystemFont,sans-serif" font-size="11" font-weight="700" fill="#0E0E0C">THE RECORD SUITE</text>
+        <text x="508" y="76" font-family="'SF Mono','Courier New',monospace" font-size="8" fill="#2D5A3D" letter-spacing="0.08em">OWN THIS — WHITE SPACE ★</text>
+        <line x1="648" y1="79" x2="648" y2="90" stroke="#C9A840" stroke-width="0.75" stroke-dasharray="2,2"/>
+        <circle cx="648" cy="105" r="19" fill="#C9A840" opacity="0.9"/>
+        <!-- Hapi -->
+        <circle cx="548" cy="278" r="8" fill="#2D5A3D" opacity="0.75"/>
+        <text x="563" y="274" font-family="-apple-system,BlinkMacSystemFont,sans-serif" font-size="11" font-weight="600" fill="#0E0E0C">Hapi</text>
+        <text x="563" y="289" font-family="Georgia,serif" font-size="9" font-style="italic" fill="#6A6A66">€79–129 one-time</text>
+        <!-- Superwhisper -->
+        <circle cx="558" cy="318" r="8" fill="#2A2A28"/>
+        <text x="573" y="314" font-family="-apple-system,BlinkMacSystemFont,sans-serif" font-size="11" font-weight="600" fill="#0E0E0C">Superwhisper</text>
+        <text x="573" y="329" font-family="Georgia,serif" font-size="9" font-style="italic" fill="#6A6A66">$249.99 lifetime · dictation</text>
+        <!-- Dragon Pro -->
+        <circle cx="484" cy="365" r="7" fill="#808078"/>
+        <text x="498" y="361" font-family="-apple-system,BlinkMacSystemFont,sans-serif" font-size="11" font-weight="500" fill="#6A6A66">Dragon Pro</text>
+        <text x="498" y="376" font-family="Georgia,serif" font-size="9" font-style="italic" fill="#A8A89E">$699.99 · Win-only · 2018</text>
+        <!-- MacWhisper -->
+        <circle cx="568" cy="403" r="9" fill="#1A2A4A"/>
+        <text x="584" y="399" font-family="-apple-system,BlinkMacSystemFont,sans-serif" font-size="11" font-weight="600" fill="#0E0E0C">MacWhisper</text>
+        <text x="584" y="414" font-family="Georgia,serif" font-size="9" font-style="italic" fill="#6A6A66">€59 · 300K copies · files</text>
+        <!-- Meetily -->
+        <circle cx="612" cy="444" r="8" fill="#2D5A3D" opacity="0.65"/>
+        <text x="627" y="440" font-family="-apple-system,BlinkMacSystemFont,sans-serif" font-size="11" font-weight="600" fill="#2D5A3D">Meetily</text>
+        <text x="627" y="455" font-family="Georgia,serif" font-size="9" font-style="italic" fill="#6A6A66">OSS · HIPAA · developer</text>
+        <!-- Notta / Rev -->
+        <circle cx="228" cy="415" r="6" fill="#9A9A90"/>
+        <text x="242" y="411" font-family="-apple-system,BlinkMacSystemFont,sans-serif" font-size="11" font-weight="500" fill="#8A8A80">Notta / Rev</text>
+      </svg>
+    </div>
+  </div>
+
+  <!-- INTELLIGENCE MOAT -->
+  <div class="section">
+    <div class="heavy-rule"></div>
+    <div class="kicker">The Moat</div>
+    <div class="section-headline">Intelligence Layer</div>
+    <div class="section-deck">Transcription is table stakes. The moat is what happens after. Every intelligence plugin is a multi-turn agentic pipeline — not a single prompt. Designed for the constraint: on-device, small models, no cloud.</div>
+    <div style="border:0.5px solid var(--hair); border-bottom:none; background:var(--surface); padding:10px 18px;">
+      <div style="font-family:Georgia,serif;font-size:12px;font-style:italic;color:var(--ink3);">Every plugin is a multi-turn agentic pipeline with tool use — design the tool set first, then the loop, then the prompt. Never a single-shot prompt.</div>
+    </div>
+    <div class="plugin-grid">
+      <div class="plugin-cell">
+        <div class="plugin-name">Ask Your Meetings</div>
+        <div class="plugin-desc">RAG over all local transcripts via MLX. The sticky daily-use feature.</div>
+      </div>
+      <div class="plugin-cell">
+        <div class="plugin-name">Agenda Compliance</div>
+        <div class="plugin-desc">Cross-references the invite agenda against what was discussed. Covered vs. deferred.</div>
+      </div>
+      <div class="plugin-cell">
+        <div class="plugin-name">Commitment Tracker</div>
+        <div class="plugin-desc">Cross-meeting promise reconciliation. Who-owes-what graph.</div>
+      </div>
+      <div class="plugin-cell">
+        <div class="plugin-name">Compliance Shield</div>
+        <div class="plugin-desc">Flag SEC statements, PHI mentions (HIPAA), required disclosures.</div>
+      </div>
+      <div class="plugin-cell">
+        <div class="plugin-name">Legal Discovery Mode</div>
+        <div class="plugin-desc">SHA-256 tamper-evident hashing, chain-of-custody, e-discovery export.</div>
+      </div>
+      <div class="plugin-cell" style="background:var(--surface-h);">
+        <div class="plugin-name" style="color:var(--ink4);">+9 More Plugins</div>
+        <div class="plugin-desc" style="color:var(--ink4);">Speaker Coaching, Board Minutes, Interview Scorecard, Negotiation Lens, and more.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PAGE 4: COMPETITION & ECONOMICS -->
+  <div class="section" style="page-break-before:always; padding-top:36px;">
+    <div class="heavy-rule-red"></div>
+    <div class="kicker kicker-red">Competitive Displacement</div>
+    <div class="section-headline">The Dragon Killer</div>
+    <div class="section-deck">Nuance Dragon Medical and Dragon Legal have held healthcare and law hostage for decades. $X00/year per user, single-speaker only, requires active dictation after the fact.</div>
+    <div class="compare-wrap">
+      <div class="compare-header">
+        <div class="compare-cell" style="background:#F1ECE0;"><div class="compare-head">Capability</div></div>
+        <div class="compare-cell" style="background:#F1ECE0;"><div class="compare-head">Dragon Medical/Legal</div></div>
+        <div class="compare-cell-green" style="background:#E8F0EC;"><div class="compare-head compare-head-green">THE RECORD</div></div>
+      </div>
+      <div class="compare-row">
+        <div class="compare-cell-dim"><div class="compare-label">Workflow</div></div>
+        <div class="compare-cell"><div class="compare-val"><span class="cross">✗</span>Active dictation — speak into mic after the fact</div></div>
+        <div class="compare-cell-green"><div class="compare-val-green"><span class="check">✓</span>Passive listening — captures the actual conversation</div></div>
+      </div>
+      <div class="compare-row">
+        <div class="compare-cell-dim"><div class="compare-label">Speaker Support</div></div>
+        <div class="compare-cell"><div class="compare-val"><span class="cross">✗</span>Single speaker, quiet room only</div></div>
+        <div class="compare-cell-green"><div class="compare-val-green"><span class="check">✓</span>4–20 speakers, cross-talk, real rooms</div></div>
+      </div>
+      <div class="compare-row">
+        <div class="compare-cell-dim"><div class="compare-label">Language</div></div>
+        <div class="compare-cell"><div class="compare-val"><span class="cross">✗</span>Rigid commands — "comma", "new paragraph"</div></div>
+        <div class="compare-cell-green"><div class="compare-val-green"><span class="check">✓</span>Natural language — context-inferred punctuation</div></div>
+      </div>
+      <div class="compare-row">
+        <div class="compare-cell-dim"><div class="compare-label">Data Location</div></div>
+        <div class="compare-cell"><div class="compare-val"><span class="cross">✗</span>Nuance cloud — HIPAA BAA required</div></div>
+        <div class="compare-cell-green"><div class="compare-val-green"><span class="check">✓</span>On-device — no data leaves the machine</div></div>
+      </div>
+      <div class="compare-row">
+        <div class="compare-cell-dim"><div class="compare-label">Domain Accuracy</div></div>
+        <div class="compare-cell"><div class="compare-val">Expensive proprietary training</div></div>
+        <div class="compare-cell-green"><div class="compare-val-green">Vocabulary Packs — $99, measured WER delta</div></div>
+      </div>
+      <div class="compare-row">
+        <div class="compare-cell-dim"><div class="compare-label">Pricing</div></div>
+        <div class="compare-cell"><div class="compare-val compare-val-neg">$X00+/year recurring per user</div></div>
+        <div class="compare-cell-green"><div class="compare-val-green">$149–$199 one-time perpetual</div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PRICING -->
+  <div class="section">
+    <div class="heavy-rule"></div>
+    <div class="kicker">Business Model</div>
+    <div class="section-headline">Perpetual Pricing — Anti-Subscription</div>
+    <div class="section-deck">One-time purchase. No lock-in. Subscription is opt-in for model updates only. Open-core AGPL — the free tier proves our privacy claim by making the code readable.</div>
+    <div class="pricing-strip">
+      <div class="price-cell">
+        <span class="price-emoji">💚</span>
+        <div class="price-tier">Free</div>
+        <div class="price-amount">$0</div>
+        <div class="price-type">perpetual · open-core</div>
+        <div class="price-desc">Record, transcribe, diarize, search, export. Proves privacy — read the source code.</div>
+      </div>
+      <div class="price-cell">
+        <span class="price-emoji">🔵</span>
+        <div class="price-tier">Standard</div>
+        <div class="price-amount">$149</div>
+        <div class="price-type">one-time perpetual</div>
+        <div class="price-desc">Full Broadsheet UI, summaries, commitments, MCP integration, data backup.</div>
+      </div>
+      <div class="price-cell" style="background:#FFFDF0;">
+        <span class="price-emoji">🟣</span>
+        <div class="price-tier">Pro</div>
+        <div class="price-amount">$199</div>
+        <div class="price-type">one-time perpetual</div>
+        <div class="price-desc">All intelligence plugins, word-level timestamps, karaoke playback, legacy import.</div>
+      </div>
+      <div class="price-cell">
+        <span class="price-emoji">🟠</span>
+        <div class="price-tier">Team</div>
+        <div class="price-amount">TBD</div>
+        <div class="price-type">per-seat or site license</div>
+        <div class="price-desc">Mac Mini as shared server + WebSocket thin clients. Law firms, medical offices.</div>
+      </div>
+    </div>
+    <div class="moat-strip">
+      <div class="moat-item"><span>Add-ons</span>Vocabulary Packs $99 each (Medical · Legal · Finance) · OCR + Text Extraction $29</div>
+      <div class="moat-item"><span>Horizon</span>BRIEF (iOS comms triage) · Horizon Call Center QA (on-prem enterprise)</div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer-strip">
+    <div class="footer-left">"Others say they are private. We prove it. Read our source code."</div>
+    <div class="footer-right">Kasr Private Intelligence · 2026</div>
+  </div>
+
+</div>
+</body>
+</html>
