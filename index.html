@@ -27,17 +27,69 @@
   <!-- HERO -->
   <div class="hero">
     <div class="hero-label">This Happened. This Week.</div>
-    <div class="hero-slack">
-      <div class="hero-slack-meta">markt · 12:14 · #general @Everyone</div>
-      <div class="hero-slack-text">"I chatted with Marcus. I believe someone made a mistake when dev-sandbox was first created — they used incorrect casing (e.g., "dev-Sandbox" instead of "dev-sandbox"). Jordan had to rename the account, which was not easy. Does this ring a bell? Maybe the rename task got mixed up with deleting accounts? I don't know why we would delete a provisioned environment mid-sprint without a deprecation ticket — if anyone has context on how this happened, please drop it in the thread so we can make sure it doesn't happen again."</div>
-    </div>
-    <div class="hero-slack" style="margin-top:14px;">
-      <div class="hero-slack-meta">samf · 12:14</div>
-      <div class="hero-slack-text dim">"it rings a bell but I was on vacation last week and am having trouble remembering the before times"</div>
-    </div>
-    <div class="hero-slack" style="margin-top:10px;">
-      <div class="hero-slack-meta">thomas · 12:16</div>
-      <div class="hero-slack-text dim">"I think Emily made the call but she is on vacation for 3 weeks."</div>
+    <div class="teams-card">
+      <!-- Channel header -->
+      <div class="teams-channel-header">
+        <div class="teams-channel-icon">
+          <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M11.5 4.5H16.5V7.5H14.5V15.5H11.5V4.5Z" fill="white" opacity="0.9"/>
+            <path d="M3.5 4.5H8.5V7.5H6.5V15.5H3.5V4.5Z" fill="white" opacity="0.9"/>
+            <path d="M6.5 9.5H13.5V12.5H6.5V9.5Z" fill="white" opacity="0.9"/>
+          </svg>
+        </div>
+        <div class="teams-channel-info">
+          <div class="teams-channel-name"># general</div>
+          <div class="teams-channel-sub">@Everyone was mentioned</div>
+        </div>
+      </div>
+
+      <!-- Messages -->
+      <div class="teams-messages">
+
+        <!-- markt — mentioned message, purple left border -->
+        <div class="teams-msg teams-msg--mentioned">
+          <div class="teams-avatar teams-avatar--purple">MT</div>
+          <div class="teams-msg-body">
+            <div class="teams-msg-header">
+              <span class="teams-msg-name">markt</span>
+              <span class="teams-msg-time">12:14 PM</span>
+            </div>
+            <div class="teams-msg-text">I chatted with Marcus. I believe someone made a mistake when dev-sandbox was first created &#8212; they used incorrect casing (e.g., &#8220;dev-Sandbox&#8221; instead of &#8220;dev-sandbox&#8221;). Jordan had to rename the account, which was not easy. Does this ring a bell? Maybe the rename task got mixed up with deleting accounts? I don&#8217;t know why we would delete a provisioned environment mid-sprint without a deprecation ticket &#8212; if anyone has context on how this happened, please drop it in the thread so we can make sure it doesn&#8217;t happen again. <span class="teams-mention">@Everyone</span></div>
+          </div>
+        </div>
+
+        <!-- samf -->
+        <div class="teams-msg">
+          <div class="teams-avatar teams-avatar--blue">SF</div>
+          <div class="teams-msg-body">
+            <div class="teams-msg-header">
+              <span class="teams-msg-name">samf</span>
+              <span class="teams-msg-time">12:14 PM</span>
+            </div>
+            <div class="teams-msg-text">it rings a bell but I was on vacation last week and am having trouble remembering the before times</div>
+          </div>
+        </div>
+
+        <!-- thomas -->
+        <div class="teams-msg">
+          <div class="teams-avatar teams-avatar--green">TH</div>
+          <div class="teams-msg-body">
+            <div class="teams-msg-header">
+              <span class="teams-msg-name">thomas</span>
+              <span class="teams-msg-time">12:16 PM</span>
+            </div>
+            <div class="teams-msg-text">I think Emily made the call but she is on vacation for 3 weeks.</div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Compose bar (decorative) -->
+      <div class="teams-status-bar">
+        <div class="teams-compose-box">
+          <span class="teams-compose-hint">Reply to thread&#8230;</span>
+        </div>
+      </div>
     </div>
     <div class="hero-context" style="margin-top:22px;">A decision was made in a meeting. Nobody recorded it. Now a provisioned environment may be gone, the person who made the call is unreachable, and the only person with context was on vacation. This happens every week in every company.</div>
     <div class="hero-thesis-rule"></div>
@@ -52,6 +104,31 @@
     <p class="problem-body">Every meeting produces decisions. Most of them disappear. The rename vs. delete confusion. "I thought we agreed to X." "Who approved this?" "I wasn't in that meeting." These aren't process failures or people failures. They're <strong>memory failures</strong> — the organization forgot something it knew.</p>
     <p class="problem-body">The tools that exist today don't fix this. Otter, Fireflies, Notion AI, Microsoft Copilot — all do the same thing: transcribe, chunk, send to GPT-4, return bullet points. That's not intelligence. That's grep with a nicer UI.</p>
     <div class="problem-tagline">They produce transcripts. We're building a decision engine.</div>
+  </div>
+
+  <!-- WHY THE RECORD -->
+  <div class="section" style="page-break-before:always; padding-top:36px;">
+    <div class="heavy-rule"></div>
+    <div class="kicker">The Name</div>
+    <div class="section-headline">Why THE RECORD</div>
+    <p class="section-deck">Three words. Three meanings. All the same thing.</p>
+    <div class="grid-3">
+      <div class="cell">
+        <div class="market-name">On the Record</div>
+        <p class="market-desc">Courts, depositions, congressional hearings — when something matters, we say "let the record show." The official record is the only source of truth that survives memory, vacation, and turnover.</p>
+        <div class="market-tag">Legal · Journalistic · Institutional</div>
+      </div>
+      <div class="cell">
+        <div class="market-name">The Record</div>
+        <p class="market-desc">Vinyl. The original high-fidelity faithful reproduction. A record preserves what actually happened — not a summary, not a recollection, not someone's notes. The thing itself.</p>
+        <div class="market-tag">Permanence · Fidelity · Source</div>
+      </div>
+      <div class="cell">
+        <div class="market-name">Record Everything</div>
+        <p class="market-desc">To record is to refuse to forget. An institution without a record forgets. An institution with THE RECORD has memory — every decision, every commitment, every conversation, indexed and searchable forever.</p>
+        <div class="market-tag">Memory · Intelligence · Permanence</div>
+      </div>
+    </div>
   </div>
 
   <!-- PAGE 2: SOLUTION -->

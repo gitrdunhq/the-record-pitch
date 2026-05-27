@@ -228,6 +228,145 @@ body {
 .footer-left  { font-family: Georgia, serif; font-size: 12px; font-style: italic; color: var(--ink3); }
 .footer-right { font-family: 'SF Mono', 'Courier New', monospace; font-size: 10px; color: var(--ink3); letter-spacing: .1em; }
 
+/* ── Teams card mockup ── */
+.teams-card {
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  background: #1F1F1F;
+  border-radius: 4px;
+  overflow: hidden;
+  border: 1px solid #2D2D2D;
+  margin-bottom: 22px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.55);
+}
+.teams-channel-header {
+  background: #292929;
+  padding: 9px 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-bottom: 1px solid #333333;
+}
+.teams-channel-icon {
+  width: 22px;
+  height: 22px;
+  border-radius: 4px;
+  background: #6264A7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.teams-channel-icon svg {
+  width: 14px;
+  height: 14px;
+}
+.teams-channel-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+.teams-channel-name {
+  font-size: 13px;
+  font-weight: 600;
+  color: #FFFFFF;
+  line-height: 1.2;
+}
+.teams-channel-sub {
+  font-size: 11px;
+  color: #8A8886;
+  line-height: 1.2;
+}
+.teams-messages {
+  padding: 12px 0 8px;
+}
+.teams-msg {
+  display: flex;
+  gap: 10px;
+  padding: 6px 14px 6px 14px;
+  position: relative;
+}
+.teams-msg:hover {
+  background: rgba(255,255,255,0.03);
+}
+.teams-msg--mentioned {
+  border-left: 3px solid #6264A7;
+  padding-left: 11px;
+  background: rgba(98,100,167,0.06);
+}
+.teams-msg--mentioned:hover {
+  background: rgba(98,100,167,0.09);
+}
+.teams-avatar {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  font-weight: 600;
+  color: #FFFFFF;
+  flex-shrink: 0;
+  margin-top: 1px;
+  letter-spacing: 0;
+}
+.teams-avatar--purple { background: #6264A7; }
+.teams-avatar--blue   { background: #0078D4; }
+.teams-avatar--green  { background: #107C10; }
+.teams-msg-body {
+  flex: 1;
+  min-width: 0;
+}
+.teams-msg-header {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  margin-bottom: 3px;
+}
+.teams-msg-name {
+  font-size: 13px;
+  font-weight: 600;
+  color: #FFFFFF;
+  line-height: 1.2;
+}
+.teams-msg-time {
+  font-size: 11px;
+  color: #8A8886;
+  line-height: 1.2;
+}
+.teams-msg-text {
+  font-size: 13.5px;
+  color: #D4D4D4;
+  line-height: 1.55;
+}
+.teams-mention {
+  background: rgba(98,100,167,0.2);
+  color: #A19EF5;
+  border-radius: 3px;
+  padding: 0 3px;
+}
+.teams-status-bar {
+  background: #252525;
+  padding: 6px 14px;
+  border-top: 1px solid #2D2D2D;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.teams-compose-box {
+  flex: 1;
+  background: #333333;
+  border-radius: 3px;
+  height: 26px;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+}
+.teams-compose-hint {
+  font-size: 11px;
+  color: #605E5C;
+}
+
 /* ── Print / PDF ── */
 @page { size: 8.5in 11in; margin: 0; }
 
@@ -242,7 +381,8 @@ body {
   .masthead-sub    { font-size: 14px; }
   .section-headline { font-size: 24px; }
   .section-deck    { font-size: 13px; }
-  .hero-slack-text { font-size: 15px; }
+  .teams-msg-text { font-size: 13.5px; }
+  .teams-card { box-shadow: none; }
   .hero-thesis     { font-size: 30px; }
   .stat-num        { font-size: 44px; }
   .price-amount    { font-size: 22px; }
